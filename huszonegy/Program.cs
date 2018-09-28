@@ -175,7 +175,7 @@ namespace huszonegy
 				kirajzol(pakli[osztott_lap],meglap*10+30,12);
 				pakli.RemoveAt(osztott_lap);
 				lapok_szama--;
-				Thread.Sleep(200);
+				Thread.Sleep(800);
 				oszto_ertek=lapszamol(oszto_lapjai);
 				Console.SetCursorPosition(60,10);
 				Console.Write("sum:"+oszto_ertek+"  ");
@@ -199,6 +199,23 @@ namespace huszonegy
 			Console.ForegroundColor=ConsoleColor.White;
 			Console.Write("  Press any key to continue . . . ");
 			Console.ReadKey(true);
+			Console.SetCursorPosition(0,20);
+			Console.Write("Akarod látni milyen lapok maradtak a pakliban?(i)");
+			if (Console.ReadKey(true).Key == ConsoleKey.I) {
+				int sor=21, oszlop=0;
+			foreach (var element in pakli) {
+				kirajzol(element,oszlop,sor);					
+				oszlop+=5;
+				if (oszlop>70) {
+					oszlop=0;
+					sor+=10;
+				}
+			}
+			}
+			
+			Console.Write("  Press any key to continue . . . ");
+			Console.ReadKey(true);
+			
 		}
 	}
 }
