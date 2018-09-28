@@ -164,6 +164,9 @@ namespace huszonegy
 			kirajzol(oszto_lapjai[1],60,2);
 			Thread.Sleep(100);
 			oszto_ertek=lapszamol(oszto_lapjai);
+			Console.SetCursorPosition(60,10);
+			Console.Write("sum:"+oszto_ertek+"  ");
+			oszto_ertek=lapszamol(oszto_lapjai);
 			
 			while(oszto_ertek<17){
 				meglap++;
