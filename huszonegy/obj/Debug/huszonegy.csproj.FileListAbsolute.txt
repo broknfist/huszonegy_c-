@@ -1,0 +1,6 @@
+C:\Users\zsolt\OneDrive\Documents\SharpDevelop Projects\huszonegy\huszonegy\bin\Debug\huszonegy.exe.config
+C:\Users\zsolt\OneDrive\Documents\SharpDevelop Projects\huszonegy\huszonegy\bin\Debug\huszonegy.exe
+C:\Users\zsolt\OneDrive\Documents\SharpDevelop Projects\huszonegy\huszonegy\bin\Debug\huszonegy.pdb
+C:\Users\zsolt\OneDrive\Documents\SharpDevelop Projects\huszonegy\huszonegy\obj\Debug\huszonegy.csprojResolveAssemblyReference.cache
+C:\Users\zsolt\OneDrive\Documents\SharpDevelop Projects\huszonegy\huszonegy\obj\Debug\huszonegy.exe
+C:\Users\zsolt\OneDrive\Documents\SharpDevelop Projects\huszonegy\huszonegy\obj\Debug\huszonegy.pdb
