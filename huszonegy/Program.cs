@@ -185,14 +185,18 @@ namespace huszonegy
 			}
 			Console.WriteLine();
 			//*************** Kiértékelés ***************************
-			if (jatekos_ertek>oszto_ertek || oszto_ertek<21) {
-				Console.Write("                                   Nyertél!");
-			} else if (jatekos_ertek==oszto_ertek || (jatekos_ertek>21 && oszto_ertek>21 )){
+			if ((jatekos_ertek>21 && oszto_ertek>21) || jatekos_ertek==oszto_ertek) {
+				Console.ForegroundColor=ConsoleColor.Blue;
 				Console.Write("                                   Döntetlen!");
+			} else if (oszto_ertek>21 || (jatekos_ertek<=21 && jatekos_ertek>oszto_ertek )){
+				Console.ForegroundColor=ConsoleColor.Green;
+				Console.Write("                                   Nyertél!");
 			} else {
+				Console.ForegroundColor=ConsoleColor.Red;
 				Console.Write("                                   Vesztettél!");
 			}
 			
+			Console.ForegroundColor=ConsoleColor.White;
 			Console.Write("  Press any key to continue . . . ");
 			Console.ReadKey(true);
 		}
