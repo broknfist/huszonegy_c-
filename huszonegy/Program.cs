@@ -168,7 +168,7 @@ namespace huszonegy
 			Console.Write("sum:"+oszto_ertek+"  ");
 			oszto_ertek=lapszamol(oszto_lapjai);
 			
-			while(oszto_ertek<16 || oszto_ertek<jatekos_ertek){
+			while(oszto_ertek<=16 || (oszto_ertek<jatekos_ertek && jatekos_ertek<=21)){
 				meglap++;
 				osztott_lap=rand.Next(lapok_szama);
 				oszto_lapjai.Add(pakli[osztott_lap]);
